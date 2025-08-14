@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: "bebas neue";
+  box-sizing: border-box;
 }
 * button {
   cursor: pointer;
@@ -431,7 +432,6 @@
     height: 180px;
   }
 }
-
 @media (max-width: 640px) {
   .body {
     width: 640px;
@@ -490,12 +490,28 @@
   .background-pic6 {
     height: 3400px;
   }
+  .background {
+    height: 500px;
+  }
+  .background-image1 {
+    height: 500px;
+  }
   .background-image {
     height: 550px;
     width: 100%;
   }
   .colorful-text {
     margin-top: 280px;
+  }
+  .frame1 {
+    margin-top: 20px;
+    height: 125px;
+  }
+  .frame2 {
+    height: 70px;
+  }
+  .frame1-b3 {
+    margin-top: 300px;
   }
   .frame1-b6 {
     margin-top: 300px;
