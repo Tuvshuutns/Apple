@@ -154,22 +154,22 @@
   width: 49%;
 }
 .image4 {
-  background-image: url("Figure0.png");
+  background-image: url("./pictures/Figure0.png");
 }
 .image5 {
-  background-image: url("Figure copy 2.png");
+  background-image: url("./pictures/Figure copy 2.png");
 }
 .image6 {
-  background-image: url("Figure (1).png");
+  background-image: url("./pictures/Figure (1).png");
 }
 .image7 {
-  background-image: url("Figure copy.png");
+  background-image: url("./pictures/Figure copy.png");
 }
 .image8 {
-  background-image: url("trade-in-image.jpg");
+  background-image: url("./pictures/trade-in-image.jpg");
 }
 .image9 {
-  background-image: url("Figure (3).png");
+  background-image: url("./pictures/Figure (3).png");
 }
 .frame1-b5 {
   display: flex;
