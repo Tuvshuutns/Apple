@@ -1,0 +1,76 @@
+<!-- File: hover-only-multiline.html -->
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Зөвхөн Hover — Доор олон мөр текст</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        margin: 40px;
+      }
+      .wrap {
+        display: inline-block;
+      }
+      .btn {
+        padding: 10px 14px;
+        border: 0;
+        border-radius: 10px;
+        background: #4f46e5;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #4338ca;
+      }
+
+      /* Нууцлагдсан хэсгийн анхны төлөв */
+      .reveal {
+        margin-top: 8px;
+        width: min(36rem, 90vw);
+        background: #eef2ff;
+        color: #1e1b4b;
+        border: 1px solid #e0e7ff;
+        border-radius: 10px;
+        padding: 12px;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-4px);
+        overflow: hidden;
+        transition: max-height 280ms ease, opacity 220ms ease,
+          transform 220ms ease;
+      }
+      /* Hover үед харагдах */
+      .wrap:hover .reveal {
+        max-height: 500px; /* энгийн хувилбар */
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .reveal p {
+        margin: 6px 0;
+      }
+      .reveal ul {
+        margin: 6px 0 0 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hover хийхэд доор олон мөр текст гарч ирнэ</h1>
+
+    <div class="wrap">
+      <button type="button" class="btn">Дээр нь хулганаа аваач</button>
+      <div class="reveal">
+        <p>1) Энэ хэсэг зөвхөн hover үед ил гарна.</p>
+        <p>2) Олон мөр байж болно. Та хүссэн хэмжээгээр текст нэмээрэй.</p>
+        <p>3) Хулганаа товчноос гаргахад буцаад нуугдана.</p>
+        <ul>
+          <li>JS хэрэггүй</li>
+          <li>Зөвхөн CSS ашигласан</li>
+          <li>Энгийн, ойлгомжтой бүтэц</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
